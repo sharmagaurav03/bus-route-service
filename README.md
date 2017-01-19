@@ -11,10 +11,10 @@ stations are connected by a bus route.
 
 ### Class Diagram
 ####Class diagram for upload service data file:
-![alt tag](https://github.com/sharmagaurav03/bus-route-service/blob/master/bus-route-service-data-file-upload.jpg)
+![alt tag](https://github.com/sharmagaurav03/bus-route-service/blob/master/class-diagrams/bus-route-service-data-file-upload.jpg)
 
 ####Class diagram for route service query:
-![alt tag](https://github.com/sharmagaurav03/bus-route-service/blob/master/bus-route-service-query.jpg)
+![alt tag](https://github.com/sharmagaurav03/bus-route-service/blob/master/class-diagrams/bus-route-service-query.jpg)
 
 ### Task
 
