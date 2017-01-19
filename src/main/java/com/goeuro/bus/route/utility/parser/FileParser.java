@@ -70,7 +70,7 @@ public class FileParser implements RouteParser {
 		HashSet<Integer> stopIds;
 		HashSet<Route> routes = new HashSet<>();
 
-		while (routesRowCounter < totalRoutes) {
+		while (routesRowCounter <= totalRoutes) {
 			 stopIds = new HashSet<>();
 			
 			String[] routeTokens = routeRows[routesRowCounter].split(" ");

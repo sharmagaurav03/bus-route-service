@@ -19,13 +19,17 @@ public class BusRouteQueryResponse {
 			return connected;
 		}
 	    
-	    private final BusStopPair busStopPair;
-	    private final boolean connected;
+	    private BusStopPair busStopPair;
+	    private boolean connected;
 
 	    public BusRouteQueryResponse(BusStopPair busStopPair, boolean connected) {
 	    	this.busStopPair=busStopPair;
 	        this.connected = connected;
 	    }
+	    
+	    //package private for integration testing.
+		BusRouteQueryResponse() {
+		}
 		@Override
 		public String toString() {
 			return "BusRouteQueryResponse [busStopPair=" + busStopPair + ", connected=" + connected + "]";

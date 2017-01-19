@@ -1,4 +1,4 @@
-package com.goeuro.bus.route.bootstrap;
+package com.goeuro.bus.route;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

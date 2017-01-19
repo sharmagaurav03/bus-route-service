@@ -23,7 +23,7 @@ public class BusRouteDataFileController {
 	@Autowired
 	private BusRouteDataFileService busRouteDataFileService;
 
-	@RequestMapping(value = "load", method = RequestMethod.POST)
+	@RequestMapping(value = "load", method = RequestMethod.PUT)
 	public void loadData(@RequestBody String filePath) throws FileNotFoundException
 	{
 		log.info("BusRouteDataFileController --> refreshData --> path --> {}", filePath);
