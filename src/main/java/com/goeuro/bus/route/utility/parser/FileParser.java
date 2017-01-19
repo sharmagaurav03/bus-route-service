@@ -90,11 +90,11 @@ public class FileParser implements RouteParser {
 	}
 
 	private String extractFileContentToString(String filePath) throws FileNotFoundException {
-		stringValidator.validate("Bus route file path", filePath);
+		stringValidator.validate("Bus route file path", filePath.trim());
 		String content;
 		Scanner scanner;
 		try {
-			File routeDataFile = new File(filePath);
+			File routeDataFile = new File(filePath.trim());
 			if(!routeDataFile.exists())
 				throw new FileNotFoundException("Route data file does not exist. File path is "+filePath);
 				

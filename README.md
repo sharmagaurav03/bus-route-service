@@ -52,7 +52,7 @@ restarted if the file or its location changes.*
 Micro service has implemented a REST-API supporting Two URLs. One post request to upload bus route data and one to query the route.
 
 1) GET serves
-`http://localhost:8080/api/direct?dep_sid={}&arr_sid={}`. The parameters
+`http://localhost:8088/api/direct?dep_sid={}&arr_sid={}`. The parameters
 `dep_sid` (departure) and `arr_sid` (arrival) are two station ids (sid)
 represented by 32 bit integers.
 
@@ -86,7 +86,7 @@ in the input data that connects the stations represented by `dep_sid` and
 `arr_sid`. Otherwise `direct_bus_route` must be set to `false`.
 
 1) POST serves
-`http://localhost:8080/api/route/data/load`. The request body
+`http://localhost:8088/api/route/data/load`. The request body
 has local file path for the route data. 
 `DRIVE:/XXX/YYY/ZZZ/SomeFolder/FileName`
 
@@ -110,7 +110,7 @@ Bus Routes Data File:
 Post: Upload the route data file
 
 ```
-http://localhost:8080/api/route/data/load
+http://localhost:8088/api/route/data/load
 ```
 Body:
 ```
@@ -123,7 +123,7 @@ Status: 200
 ```
 Query:
 ````
-http://localhost:8080/api/direct?dep_sid=3&arr_sid=6
+http://localhost:8088/api/direct?dep_sid=3&arr_sid=6
 ```
 
 Response:

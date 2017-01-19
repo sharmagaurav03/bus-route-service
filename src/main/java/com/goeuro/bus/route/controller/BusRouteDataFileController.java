@@ -6,7 +6,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,7 +23,7 @@ public class BusRouteDataFileController {
 	@Autowired
 	private BusRouteDataFileService busRouteDataFileService;
 
-	@RequestMapping(value = "load", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(value = "load", method = RequestMethod.POST)
 	public void loadData(@RequestBody String filePath) throws FileNotFoundException
 	{
 		log.info("BusRouteDataFileController --> refreshData --> path --> {}", filePath);
