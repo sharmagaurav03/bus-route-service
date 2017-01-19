@@ -26,7 +26,6 @@ start() {
 		sh -c "$CMD" > $PIDFILE
 		sleep 5s
 		response=$(curl -X PUT -i -H "Content-type:text/plain" http://localhost:8088/api/route/data/load -d  $DATA_FILE --write-out '%{http_code}' --silent --output /dev/null)
-		echo "$response"
 		if [ "$response" != "200" ]; then
 			kill -15 $(cat $PIDFILE) && rm -f $PIDFILE
 			echo "Bus route data file is not valid. Service not started."
