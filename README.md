@@ -11,6 +11,8 @@ stations are connected by a bus route.
 
 ### Class Diagram
 
+![alt tag](https://github.com/sharmagaurav03/bus-route-service/blob/master/bus-route-service-data-file-upload.jpg)
+![alt tag](https://github.com/sharmagaurav03/bus-route-service/blob/master/bus-route-service-query.jpg)
 
 ### Task
 
