@@ -86,8 +86,6 @@ in the input data that connects the stations represented by `dep_sid` and
 has local file path for the route data. 
 `DRIVE:/XXX/YYY/ZZZ/SomeFolder/FileName`
 
-The response is a either status 200 or error.
-
 ```
 The response is a either status 200 or error.
 ```
