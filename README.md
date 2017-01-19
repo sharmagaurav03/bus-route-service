@@ -151,7 +151,10 @@ repository directory.
 ```
 project_folder
 ├── src
-├── build.gradle/pom.xml
+├── tests --> Contains sample test script.
+├── routes --> Contains test routes data files.
+├── class-diagrams ---> Contains class diagrams of both flows.
+├── pom.xml
 ├── build.sh
 └── service.sh
 ```

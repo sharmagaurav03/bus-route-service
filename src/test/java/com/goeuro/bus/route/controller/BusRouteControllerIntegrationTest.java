@@ -21,7 +21,7 @@ import com.goeuro.bus.route.dto.BusRouteQueryResponse;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.DEFINED_PORT)
-public class BusRouteControllerTest {
+public class BusRouteControllerIntegrationTest {
 
 	private static final String DATA_ROUTE = "/api/route/data/load";
 
@@ -31,7 +31,7 @@ public class BusRouteControllerTest {
 	@Before
 	public void setUp() {
 		restTemplate.exchange(DATA_ROUTE, HttpMethod.PUT,
-				new HttpEntity<String>(new File("test-routes").getAbsolutePath(), new HttpHeaders()), String.class);
+				new HttpEntity<String>(new File("routes/test-routes").getAbsolutePath(), new HttpHeaders()), String.class);
 	}
 
 	@Test
