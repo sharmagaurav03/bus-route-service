@@ -49,7 +49,7 @@ restarted if the file or its location changes.*
 
 ### REST API
 
-Micro service has implemented a REST-API supporting Two URLs. One post request to upload bus route data and one to query the route.
+Micro service has implemented a REST-API supporting Two URLs. One PUT request to upload bus route data and one to query the route.
 
 1) GET serves
 `http://localhost:8088/api/direct?dep_sid={}&arr_sid={}`. The parameters
@@ -85,7 +85,7 @@ The `direct_bus_route` field has to be set to `true` if there exists a bus route
 in the input data that connects the stations represented by `dep_sid` and
 `arr_sid`. Otherwise `direct_bus_route` must be set to `false`.
 
-1) POST serves
+1) PUT serves
 `http://localhost:8088/api/route/data/load`. The request body
 has local file path for the route data. 
 `DRIVE:/XXX/YYY/ZZZ/SomeFolder/FileName`
@@ -107,7 +107,7 @@ Bus Routes Data File:
 2 0 6 4
 ```
 
-Post: Upload the route data file
+PUT: Upload the route data file
 
 ```
 http://localhost:8088/api/route/data/load
