@@ -90,7 +90,7 @@ public class FileParser implements RouteParser {
 	}
 
 	private String extractFileContentToString(String filePath) throws FileNotFoundException {
-		stringValidator.validate("Bus route file path", filePath.trim());
+		stringValidator.validate("Bus route file path", filePath);
 		String content;
 		Scanner scanner;
 		try {

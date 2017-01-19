@@ -141,11 +141,13 @@ Micro service contains two simple bash scripts in the top level
 repository directory.
 
 - `build.sh`: builds the project.
-- `service.sh`: starts / stops your micro service. Accepts `start|stop|block`
+- `service.sh`: starts / stops micro service. Accepts `start|stop|block`
   and the path to a **bus routes data file** as arguments (`bash service.sh
   start FILE`). After micro service gets started it shall answer queries
   until it is terminated. 
-
+```
+####  Until correct and valid route data file is not provided, bus-route-service will not start.
+```
 ### Shipping
 
 ```
