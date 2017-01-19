@@ -11,7 +11,7 @@ import com.goeuro.bus.route.repository.BusRouteRepository;
 @Service
 public class BusRouteService {
 
-	private static Logger log = LoggerFactory.getLogger(BusRouteService.class);
+	private static final Logger log = LoggerFactory.getLogger(BusRouteService.class);
 
 	@Autowired
 	private BusRouteRepository busRouteRepository;

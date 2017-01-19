@@ -12,7 +12,7 @@ import com.goeuro.bus.route.model.Route;
 @Repository
 public class BusRouteRepository {
 
-	private static Logger log = LoggerFactory.getLogger(BusRouteRepository.class);
+	private static final Logger log = LoggerFactory.getLogger(BusRouteRepository.class);
 
 	private volatile Set<Route> routes;
 

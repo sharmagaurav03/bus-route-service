@@ -17,7 +17,7 @@ import com.goeuro.bus.route.utility.validator.StringValidator;
 
 @Component
 public class FileParser implements RouteParser {
-	private static Logger log = LoggerFactory.getLogger(FileParser.class);
+	private static final Logger log = LoggerFactory.getLogger(FileParser.class);
 	private StringValidator stringValidator = new StringValidator();
 	private RouteRowValidator routeRowValidator = new RouteRowValidator();
 	

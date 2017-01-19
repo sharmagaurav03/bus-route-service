@@ -15,7 +15,7 @@ import com.goeuro.bus.route.utility.parser.FileParser;
 @Service
 public class BusRouteDataFileService {
 
-	private static Logger log = LoggerFactory.getLogger(BusRouteDataFileService.class);
+	private static final Logger log = LoggerFactory.getLogger(BusRouteDataFileService.class);
 
 	@Autowired
 	private BusRouteRepository busRouteRepository;
